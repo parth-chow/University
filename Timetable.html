@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timetable</title>
+	    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">	
+	<link rel="stylesheet" type="text/css" href="css/timetable.css">
+	<style type="text/css">
+
+	</style>	
+</head>
+<body>
+
+	<div class="jumbotron jumbotron-fluid">
+	  <div class="container">
+	    <h1 class="display-4">My Timetable</h1>
+	    
+	    <p class="lead"></p>
+	    <button type="button" id="units" class="btn btn-warning btn-lg">Explore Units</button>
+	  </div>
+	</div>	
+	<div class="container-sm">
+
+			<div class="card">
+			  <div class="card-body">
+			    <h5 class="card-title">My Timetable</h5>
+			    
+			  </div>
+			    <table class="table table-hover table-bordered"> <!-- hoverable table structure for displaying the timetable-->
+				  <thead>
+				    <tr>				      
+				      <th scope="col">Unit Code</th>
+				      <th scope="col">Unit Description</th>
+				      <th scope="col">Group</th>
+				      <th scope="col">Day</th>
+				      <th scope="col">Time</th>
+				      <th scope="col">Campus</th>
+				      <th scope="col">Location</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      
+				      <td>502</td>
+				      <td>Web Development</td>
+				      <td>Lecture</td>
+				      <td>Mon</td>
+				      <td>13.00</td>
+				      <td>Neverland</td>
+				      <td>Lecture Theater 203</td>
+				    </tr>
+				    <tr>
+				      
+				      <td>502</td>
+				      <td>Web Development</td>
+				      <td>Tutorial</td>
+				      <td>Mon</td>
+				      <td>16.00</td>
+				      <td>Neverland</td>
+				      <td>Room 272</td>
+				    </tr>
+				      <td>591</td>
+				      <td>IOS App Development</td>
+				      <td>Lecture</td>
+				      <td>Mon</td>
+				      <td>9.00</td>
+				      <td>Neverland</td>
+				      <td>Lecture Theater 503</td>
+				    </tr>
+				    <tr>
+				      
+				      <td>591</td>
+				      <td>IOS App Development</td>
+				      <td>Tutorial</td>
+				      <td>Tue</td>
+				      <td>11.00</td>
+				      <td>Neverland</td>
+				      <td>Room 273</td>
+				    </tr>				    
+
+				  </tbody>
+				</table>
+				<a href="Tutorialallocate.html" class="btn btn-danger btn-lg active" role="button">Allocate to tutorials</a>
+			</div>
+
+
+	</div>
+		<script type="text/javascript">
+			
+	    $("#units").click(function(){
+     		 window.location = "Units.html";    
+
+
+    	});    
+
+		</script>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

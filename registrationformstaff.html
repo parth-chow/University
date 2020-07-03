@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+	<link rel="stylesheet" type="text/css" href="css/staffform.css">
+
+
+
+</head>
+<body>
+		<script>
+			var pattern =  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?=.*[!@#$%^]).{6,12}$/;
+			
+		function validate(){ // script for form submission validation  
+			if ($("#ID").val()=="") { 
+				alert("Please enter ID"); 
+				return false;
+			}			
+			else if($("#username").val()=="") { 
+				alert("Please enter username"); 
+				return false;
+			}else if($("#password").val()=="" || !(pattern.test($("#password").val()))) { 
+				alert("Please enter password that must be at leat 6 charachters with at least 1 number, 1 uppercase letter, 1 lowercase letter and 1 special character"); 
+				return false;
+			}
+			else if($("#cnfpassword").val()=="") { 
+				alert("Please re-type your password"); 
+				return false;
+			}else if($("#password").val() != $("#cnfpassword").val()){
+				alert("Passwords do not match");
+				return false;
+			}else if($("#email").val()=="") { 
+				alert("Please enter your email address"); 
+				return false;
+			} else if(!$("#checked").is(":checked")){
+				alert("You must agree to the terms and conditions");
+				return false;
+			}
+		}
+	</script>
+
+
+
+
+
+<div class="abc">
+  <h2>Register</h2>
+  
+  <form method="post" action="Home.html"  name="registration" onsubmit="return validate();"> <!-- validaion function reference-->
+
+  	<i class="glyphicon glyphicon-info-sign"></i>
+    <label for="ID">Staff ID</label><br>
+    <input type="number" name="studentid" id="ID" placeholder="123456"/><br>
+
+  	<i class="glyphicon glyphicon-user"></i>
+    <label for="username">Name</label><br>
+    <input type="text" name="firstname" id="username" placeholder="parthac"/><br>
+
+    <i class="glyphicon glyphicon-education"></i>
+    <label for="username">Qualification</label><br>
+    <input type="text" name="firstname" id="username" placeholder="Phd, Masters"/><br>
+
+    <i class="glyphicon glyphicon-wrench"></i>
+    <label for="password">Password</label><br>          <!-- inputs in the form-->
+    <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"/><br>
+
+    <i class="glyphicon glyphicon-wrench"></i>
+    <label for="cnfpassword">Confirm Password</label><br>
+    <input type="password" name="cnfpassword" id="cnfpassword" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"/><br>
+
+    <i class="glyphicon glyphicon-envelope"></i>
+    <label for="email">Email</label><br>
+    <input type="email" name="email" id="email" placeholder="parthac@utas.edu.au"/><br>
+
+    <div>
+    	<i class="glyphicon glyphicon-search"></i>
+    	<i class="glyphicon glyphicon-plus"></i>
+    	<label>Gender(optional)</label><br>
+		<label for="male">Male</label>
+		<input type="radio" name="Genderchoice" id="male" value="male">
+
+		<label for="female">Female</label>
+		<input type="radio" name="Genderchoice" id="female" value="female">
+
+		<label for="other">Other</label>
+		<input type="radio" name="Genderchoice" id="other" value="other">
+	</div>
+
+	<label for="checked">I agree to the terms and conditions </label>
+			<input type="checkbox" name="checkbox" id="checked" ><br>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+  </form>
+</div>
+
+
+
+</body>
+</html>

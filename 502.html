@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>502 Web Development</title>
+	    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/unitdetails.css">
+
+</head>
+<body>
+
+	<div class="jumbotron jumbotron-fluid">
+	  <div class="container">
+	    <h1 class="display-4">502 Web Development</h1>
+	    <h2 class="display-5">Be a web developer</h1>
+	    <p class="lead"></p>
+	    	  
+	</div>
+	</div>	
+
+
+
+
+<div class="container">
+  
+    
+      <div class="card"> <!-- card format for displaying the unit details in separate sections-->
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" href="#details" role="tab" aria-controls="details" aria-selected="true">Unit Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="#moderators" role="tab" aria-controls="moderators" aria-selected="false">Unit Moderators</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#timetable" role="tab" aria-controls="timetable" aria-selected="false">Unit Timetable</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          
+          
+           <div class="tab-content mt-3">
+            <div class="tab-pane active" id="details" role="tabpanel">
+              <p class="card-text">This unit will explain the relationship between data, information and knowledge and introduce a number of different tools for managing, storing, securing, modelling, visualizing and analysing data. This unit will provide an understanding of how data can be manipulated to meet the information needs of users. This unit introduces the techniques to enable the students to use SQL for managing data, creating information and allowing knowledge development. </p>
+              
+            </div>
+             
+            <div class="tab-pane" id="moderators" role="tabpanel" aria-labelledby="history-tab">  
+            	
+                 <div class="list-group">
+                 	<h5>Unit Coordinator</h4>
+					  <a href="#" class="list-group-item list-group-item-action">Soonja Yeom</a>
+					</div>
+				
+                 <div class="list-group">
+                 	<h5>Unit Lecturer</h4>
+					  <a href="#" class="list-group-item list-group-item-action">Soonja Yeom</a>
+					</div>
+              
+              
+                 <div class="list-group">
+                 	<h5>Unit Tutors</h4>
+					  <a href="#" class="list-group-item list-group-item-action">John Lee</a>
+					  <a href="#" class="list-group-item list-group-item-action">Riseul Ryu</a>
+					  <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+					  <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+					</div>
+
+              
+            </div>
+             
+            <div class="tab-pane" id="timetable" role="tabpanel" aria-labelledby="deals-tab">
+              <table class="table table-hover"> <!-- table for displaying the timetable of the unit-->
+				  <thead>
+				    <tr>
+				      
+				      <th scope="col">Location</th>
+				      <th scope="col">Study Period</th>
+				      <th scope="col">Attendance Option</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      
+				      <td>Pandora, Rivendell</td>
+				      <td>Semester 1, Semester 2, Winter School</td>
+				      <td>On Campus</td>
+				    </tr>
+				    <tr>
+				      
+				      <td>Neverland</td>
+				      <td>Spring School</td>
+				      <td>On Campus, Off Campus</td>
+				    </tr>
+
+				  </tbody>
+				</table>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  
+</div>
+<script type="text/javascript">
+	$('#bologna-list a').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show') // script for showing the different tabs on the card layout on click 
+})
+</script>
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

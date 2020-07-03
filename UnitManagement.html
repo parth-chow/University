@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unit Management</title>
+	    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/unitdetails.css">	
+</head>
+<body>
+
+	<div class="jumbotron jumbotron-fluid">
+	  <div class="container">
+	    <h1 class="display-4">Unit Management</h1>
+	    
+	    <p class="lead"></p>
+	    <button type="button" id="staff" class="btn btn-warning btn-lg">Manage Staff</button>
+	  </div>
+	</div>	
+	<div class="container-sm">
+
+			<div class="card">
+			  <div class="card-body">
+			    <h5 class="card-title">Offered Courses</h5>
+			    
+			  </div>
+			    <table class="table table-hover table-bordered">
+				  <thead>
+				    <tr>				      
+				      <th scope="col">Unit Code</th>
+				      <th scope="col">Unit Description</th>
+				      <th scope="col">Offering Semester</th>				      
+				      <th scope="col">Unit Coordinator</th>
+				      <th scope="col">Campus</th>
+				      <th scope="col">Location</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      
+				      <td>502</td>
+				      <td>Web Development</td>
+				      <td>Semester 1, Winter School</td>
+				      <td>Soonja Yeom</td>
+				      <td>Neverland</td>
+				      <td>Lecture Theater 203</td>
+				    </tr>
+				    <tr>				      
+				      <td>592</td>
+				      <td>IOS App Development</td>
+				      <td>Semester 1, Spring School</td>
+				      <td>Amanda Lee</td>
+				      <td>Neverland</td>
+				      <td>Lecture Theater 503</td>
+				    </tr>
+				      <td>672</td>
+				      <td>Photography</td>
+				      <td>Semester 1, Semester 2</td>
+				      <td>Chang Shan</td>
+				      <td>Pandora</td>
+				      <td>Lecture Theater 234</td>
+				    </tr>
+				    <tr>
+				      <td>787</td>
+				      <td>Cloud Computing</td>
+				      <td>Semester 1, Semester 2</td>
+				      <td>Chang Shan</td>
+				      <td>Pandora, Rivendell</td>
+				      <td>Room 254</td>
+				    </tr>				    
+
+				  </tbody>
+				</table>
+				
+			</div>
+
+
+	</div>
+		<script type="text/javascript">
+			
+	    $("#staff").click(function(){
+     		 window.location = "AcademicStaff.html";    
+
+
+    	});    
+
+		</script>	
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>	
+
+</body>
+</html>
